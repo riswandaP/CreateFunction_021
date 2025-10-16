@@ -1,5 +1,10 @@
 # input
-suhu = float(input("Inputkan Besaran Suhu :"))
+try :
+    suhu = float(input("Inputkan Besaran Suhu :"))
+except ValueError as e :
+    print("error:", e)
+    exit()
+    
 format_suhu = input("Format Suhu (c/f/k) :")
 konversi_suhu = input("Konversi Suhu (c/f/k) :")
 hasil = " "
